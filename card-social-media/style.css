@@ -13,7 +13,7 @@
     animation: bg 20s infinite;
     overflow: hidden;
   }
-  @keyframes bg {
+  @keyframes bg { /* Aqui voce pode mudar as cores do fundo */
     0%, 100% { background-color: #59acff; }
     25% { background-color: #97ffd4; }
     50% { background-color: #ad8fff; }
@@ -24,13 +24,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-  }
-  img {
-    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.5);
-    z-index:1;
-    border-radius: 550px;
-    left: -40%;
   }
   .container::before {
     font-family: 'Font Awesome 5 Free';
@@ -46,7 +39,7 @@
     display: flex;
     justify-content: end;
     width: 600px;
-    color: #fff;
+    color: #fff; /* aqui voce pode mudar a cor do texto da sua descriçao */
     text-align: right;
     padding: 30px;
     border-radius: 10px;
@@ -62,7 +55,7 @@
   }
   h5 {
     opacity: .8;
-    color: black;
+    color: black; /* aqui voce pode mudar a cor do seu nome */
     font-size: 45px;
     font-weight: 900;
     text-transform: uppercase;
@@ -80,33 +73,37 @@
 
   .card a {
     transition: 0.4s;
-    color: rgb(27, 27, 27);
+    color: rgb(27, 27, 27); /* Aqui voce pode mudar a cor dos ícones */
     ;
   }
-  svg {
+  svg { /* Aqui voce muda o tamanho dos icones */
     width: 50px;
     height: 50px;
   }
-  #github:hover {
+  #rede1:hover { /* Quando voce passa o mouse em cima do icone, ele muda de cor, e é por causa disso aqui */
     color: #c9510c;
   }
   
-  #tiktok:hover {
+  #rede2:hover {
     color: #5d29d6;
   }
   
-  #linkedin:hover {
+  #rede3:hover {
     color: #3b5998;
   }
   
-  #twitter:hover {
+  #rede4:hover {
     color: #00acee;
   }
   .card-img {
     position: absolute;
-    width: 550px;
+    width: 550px; /* aqui voce muda o tamanho da imagem */
     top: -130px;
     right: 250px;
+    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.5);
+    z-index:1;
+    border-radius: 550px;
+    left: -40%;
   }
   .slowfloat {
     animation: SlowFloat 1s infinite alternate;
